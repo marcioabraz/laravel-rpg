@@ -14,4 +14,8 @@ class HomeController extends Controller
     {
         return view('classes',compact('job'));
     }
+    public function pokemon($nome)
+    {
+        return view('pokemon',compact('nome'));
+    }
 }

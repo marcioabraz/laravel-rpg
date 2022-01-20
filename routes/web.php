@@ -23,3 +23,5 @@ Route::get('/classes/{job}',[HomeController::class,'classes']);
 Route::get('/calculadora',[CalculadoraController::class,'calculadora']);
 
 Route::post('/soma',[CalculadoraController::class,'soma']);
+
+Route::get('pokemon/{nome}', [Homecontroller::class, 'pokemon']);
