@@ -7,7 +7,7 @@
     <title>Calculadora</title>
 </head>
 <body>
-    <form action="/calcular" method="POST"> @csrf
+    <form action="calcular" method="POST"> @csrf
     <input type="number" name="num1" placeholder="Número 1">
     <select name="operador" >
         <option value="soma">Soma</option>
@@ -16,7 +16,7 @@
         <option value="sub">Subtração</option>
     </select>
     <input type="number" name="num2" placeholder="Número 2">
-    <input type="submit" name="submit" placeholder="Somar">
+    <input type="submit" name="submit" placeholder="calcular">
     </form>
 </body>
 </html>

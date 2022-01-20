@@ -12,10 +12,29 @@ class CalculadoraController extends Controller
     }
     public function calcular(Request $request)
     {
-        $num1 = $request->num1;
-        $num2 = $request->num2;
+        
+        $v1 = $request->num1;
+        $v2 = $request->num2;
         $operador = $request->operador;
-        $result = $num1 + $num2;
+        
+        switch ($operador) {
+            case 'soma':
+                $result = $v1 + $v2;
+                break;
+            case 'multi':
+                $result = $v1 * $v2;
+                break;
+            case 'div':
+                if ($v2 > 0 ){
+                    $result = $v1 / $v2;
+                }else{
+                    $result = 0;
+                }
+                break;
+            case 'sub':
+                $result = $v1 - $v2;
+                break;
+            }
         return view('resultado', compact('result'));
     }
 }
