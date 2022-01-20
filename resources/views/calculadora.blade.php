@@ -16,7 +16,7 @@
         <option value="-">Subtração</option>
     </select>
     <input type="number" name="num2" placeholder="Número 2">
-    <input type="submit" name="submit" placeholder="calcular">
+    <button type="submit">Calcular</button>
     </form>
 </body>
 </html>
