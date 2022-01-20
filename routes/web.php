@@ -20,8 +20,6 @@ Route::get('/', [HomeController::class,'index']);
 
 Route::get('/classes/{job}',[HomeController::class,'classes']);
 
-Route::get('/calculadora',[CalculadoraController::class,'calculadora']);
-
-Route::post('/calcular',[CalculadoraController::class,'calcular']);
+Route::get('/calculadora',[CalculadoraController::class,'calcular']);
 
 Route::get('pokemon/{nome}', [Homecontroller::class, 'pokemon']);
