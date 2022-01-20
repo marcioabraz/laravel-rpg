@@ -18,20 +18,20 @@ class CalculadoraController extends Controller
         $operador = $request->operador;
         
         switch ($operador) {
-            case 'soma':
+            case '+':
                 $result = $v1 + $v2;
                 break;
-            case 'multi':
+            case '*':
                 $result = $v1 * $v2;
                 break;
-            case 'div':
+            case '/':
                 if ($v2 > 0 ){
                     $result = $v1 / $v2;
                 }else{
                     $result = 0;
                 }
                 break;
-            case 'sub':
+            case '-':
                 $result = $v1 - $v2;
                 break;
             }

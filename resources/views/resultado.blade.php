@@ -7,6 +7,6 @@
     <title>Calculadora</title>
 </head>
 <body>
-    <h2>Resultado : {{ $result }}</h2>
+    <h2>Resultado: {{ $result }}</h2>
 </body>
 </html>
